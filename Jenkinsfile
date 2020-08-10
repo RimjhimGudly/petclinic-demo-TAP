@@ -1,28 +1,28 @@
 pipeline{
   agent any
-  stages {
+  stages{
     stage('Build'){
-      steps {
+      steps{
         echo 'Building Project'
       }
     }
      stage('Archive'){
-      steps {
+      steps{
         echo 'Archiving Project'
       }
     }
      stage('Build Docker Image'){
-      steps {
+      steps{
         echo 'Building Docker Image'
       }
     }
      stage('Push Docker Image'){
-      steps {
+      steps{
         echo 'Pushing Docker Image'
       }
     }
      stage('Deploy to Dev'){
-      steps {
+      steps{
         echo 'Deploying to Dev Environmaent'
       }
     }
